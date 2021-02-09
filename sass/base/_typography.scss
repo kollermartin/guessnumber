@@ -1,0 +1,13 @@
+.heading {
+  font-size: 7rem;
+  letter-spacing: 0.7rem;
+  z-index: 100;
+
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 5rem;
+  }
+}
+
+.subheading {
+  font-size: 3rem;
+}

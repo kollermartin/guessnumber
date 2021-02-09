@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Guess My Number!</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Overlay and player -->
+      <div class="overlay">
+        
+        <div class="overlay__welcome">
+          <p class="subheading">
+            Enter your nickname and start playing the game! <br />Enjoy!
+          </p>
+        </div>
+        <div class="login">
+          <span class="login__nickname">Nickname</span>
+          <div class="login__box">
+            <input type="text" maxlength="14" class="login__player" />
+            <a href="#" class="btn btn--confirm">Enter!</a>
+          </div>
+        </div>
+        
+      </div>
+      <header>
+        <div class="header__box">
+          <h1 class="heading">Guess My Number!</h1>
+          <p class="between subheading">(Between 1 and 30)</p>
+        </div>
+      </header>
+      <div class="number">
+        <p class="number__box">?</p>
+      </div>
+      <main>
+        <a href="#" class="btn btn--restart">Restart!</a>
+        <section class="left">
+          <p class="left__message"> &#8595 Your guess &#8595</p>
+          <div class="left__box">
+            <input type="number" class="left__guess" />
+            <a href="#" class="btn btn--check">Check!</a>
+          </div>
+          <a href="#" class="btn btn--nextround notVisible">New round!</a>
+        </section>
+        <section class="right">
+          <div class="player">
+            <p class="player__name">Player name</p>
+            <p class="player__score">Score: <span class="score">20</span></p>
+            <p class="player__highscore">
+              Highscore: <span class="highscore">0</span>
+            </p>
+          </div>
+        </section>
+      </main>
+      <footer>Made by Martin Koller 2021 &copy;</footer>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
