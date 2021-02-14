@@ -9,6 +9,9 @@ const playernameEl = document.querySelector('.login__player');
 const messageEl = document.querySelector('.left__message');
 const btnNextRound = document.querySelector('.btn--nextround');
 const highScoreEl = document.querySelector('.highscore');
+const main = document.querySelector('main');
+
+
 
 let isVisible = false;
 let secretNumber = Math.trunc(Math.random() * 30) + 1;
@@ -32,6 +35,7 @@ const initGame = function () {
   highScore = 0;
   highScoreEl.textContent = highScore;
   isVisible = false;
+  main.style.visibility = 'hidden';
 };
 
 const newRound = function() {
@@ -110,6 +114,7 @@ document.querySelector('.btn--restart').addEventListener('click', () => {
 
 document.querySelector('.btn--confirm').addEventListener('click', () => {
   overlayEl.classList.toggle('hidden');
+  main.style.visibility = 'unset';
   playerName = playernameEl.value;
 
   if (playerName === '') displayedPlayernameEl.textContent = 'Unknown';

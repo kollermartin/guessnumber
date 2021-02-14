@@ -34,7 +34,7 @@ body {
 }
 
 header {
-  height: 35vh;
+  height: 25vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -60,7 +60,7 @@ main {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   font-size: 4rem;
-  height: 60vh;
+  height: 70vh;
 }
 
 @media only screen and (max-width: 50em) {
@@ -69,15 +69,15 @@ main {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 
 footer {
   font-size: 2rem;
-  height: 5vh;
+  min-height: 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -363,12 +363,6 @@ footer {
 
 .right {
   text-align: center;
-}
-
-@media only screen and (max-width: 50em) {
-  .right {
-    margin-top: 10rem;
-  }
 }
 
 .right .player {

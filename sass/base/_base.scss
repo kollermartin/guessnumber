@@ -21,6 +21,7 @@ html {
 }
 
 body {
+  // height: 100vh;
   height: 100vh;
   box-sizing: border-box;
   //   background-color: #b9a7a7;
@@ -29,7 +30,7 @@ body {
 }
 
 header {
-  height: 35vh;
+  height: 25vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,19 +42,22 @@ main {
   align-items: center;
   justify-content: space-around;
   font-size: 4rem;
-  height: 60vh;
+  height: 70vh;
   @media only screen and (max-width: $bp-medium) {
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
   }
 }
 
 footer {
   font-size: 2rem;
-  height: 5vh;
+  min-height: 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   z-index: 100;
+  @media only screen and (max-width: $bp-medium) {
+    
+  }
 }
