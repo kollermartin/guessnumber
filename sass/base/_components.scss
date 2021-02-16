@@ -24,12 +24,24 @@
 
   &--confirm {
     margin-left: 4rem;
+    @media only screen and (max-width: $bp-small) {
+      margin-left: 0;
+      margin-top: 1rem;
+      width: 50%;
+      text-align: center;
+    }
   }
 
   &--restart {
     position: absolute;
     right: 2rem;
     top: 2rem;
+    @media only screen and (max-width: $bp-medium) {
+      position: relative;
+      right: 0;
+      top: 0;
+      margin: 2rem 0;
+    }
   }
 
   &--nextround {
@@ -49,11 +61,11 @@
   background-color: $main-color;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-
   &__welcome {
     text-align: center;
+    margin-top: 10rem;
+    
   }
 
   .login {
@@ -69,6 +81,11 @@
     padding: 2rem;
     border-radius: 3%;
 
+    @media only screen and (max-width: $bp-small) {
+      width: 80vw;
+      align-items: center;
+    }
+
     &__nickname {
       font-size: 3rem;
       margin-bottom: 1rem;
@@ -76,6 +93,10 @@
 
     &__box {
       display: flex;
+      @media only screen and (max-width: $bp-small) {
+        flex-direction: column;
+        align-items: center;
+      }
     }
 
     &__player {
@@ -86,6 +107,10 @@
       background: #fff;
       border: 2px solid $secondary-color;
       transition: all 0.5s;
+
+      @media only screen and (max-width: $bp-small) {
+        width: 90%;
+      }
 
       &:focus {
         outline: none;

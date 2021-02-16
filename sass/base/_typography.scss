@@ -1,13 +1,21 @@
 .heading {
   font-size: 7rem;
-  letter-spacing: 0.7rem;
-  z-index: 100;
+  letter-spacing: 0.5rem;
+  
 
   @media only screen and (max-width: $bp-medium) {
     font-size: 5rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 4rem;
   }
 }
 
 .subheading {
   font-size: 3rem;
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 2rem;
+  }
 }

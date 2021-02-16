@@ -18,11 +18,15 @@ html {
   @media only screen and (max-width: $bp-medium) {
     font-size: 50%;
   }
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 45%;
+  }
 }
 
 body {
+  // // height: 100vh;
   // height: 100vh;
-  height: 100vh;
   box-sizing: border-box;
   //   background-color: #b9a7a7;
   background-color: $main-color;
@@ -30,7 +34,7 @@ body {
 }
 
 header {
-  height: 25vh;
+  // height: 25vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,7 +46,7 @@ main {
   align-items: center;
   justify-content: space-around;
   font-size: 4rem;
-  height: 70vh;
+  // height: 70vh;
   @media only screen and (max-width: $bp-medium) {
     flex-direction: column;
     justify-content: flex-start;

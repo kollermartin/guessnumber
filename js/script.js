@@ -35,7 +35,7 @@ const initGame = function () {
   highScore = 0;
   highScoreEl.textContent = highScore;
   isVisible = false;
-  main.style.visibility = 'hidden';
+  main.classList.toggle('notVisible');
 };
 
 const newRound = function() {
@@ -114,7 +114,7 @@ document.querySelector('.btn--restart').addEventListener('click', () => {
 
 document.querySelector('.btn--confirm').addEventListener('click', () => {
   overlayEl.classList.toggle('hidden');
-  main.style.visibility = 'unset';
+  main.classList.toggle('notVisible');
   playerName = playernameEl.value;
 
   if (playerName === '') displayedPlayernameEl.textContent = 'Unknown';

@@ -6,13 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="css/main.css" />
     <title>Guess My Number!</title>
+    <link rel="image_src" href="game.PNG" />
+    <meta property="og:image" content="https://lh3.googleusercontent.com/-ridILlQB3cxjYOz5kYspg7Tzv4X17m7G8c4_T_5KdXGCFeUlFbSmTEim7YFfishnmUzr6BCQ6ojcZTrWN79JpZG6F7jUplms0Xz5Aw-FXlHwlqKmmCHJgH6lxouiTybrs-RHBFO8F5U7zDGsS1Xu3UBV2gdKqVk9wCikcf-fTuwm0HaUJa2pFM4O5PvZzeGkRuv3xDNFEtlek7Plk6VF9gUo-JTqSNS3uidH_txONGl1rRbZmZ36pdZAqHMZuevyxeFznjq_iZEbeN8ZlrncfzeEHUOdLB1Uouai4HTBMIZFUMVgFLXrfmTMjseNtopwAsEj6mZh73dVtnocxyJubaAVVaT6InfeUj4brqOEPy7fS2F6WXvVHjMNA4sGCYXaj_s2mWLkRC-xMFgERZvfNIF0Wv-2A9BXWYtLKl7nxKvszsIRSpEQrMf6nmv52vYRKpXFNoNHJi-ye90TRC1k419y07pylca_npIOwfKh322yjbudaarxnketM4SPDMyyLtDJS3bsdHxqEp52ffiWL9--3Makw3JhI79zo8qVeZRKr8vQinOTD-HCvxgdZH12Z8ewyZHBkoYYm43TlH4nd-cr24302A7NHJnlVT8Cr3yMdVMvj_Hcl6w8f21aBhQBAmSxji8XHdJri5kgLlRXFXVTE17DH3Vb8yEzatN8B9rMh_xhsnjipvSGU4gZw=w1920-h902-no?authuser=0">
   </head>
-  <body>
-    <div class="container">
+  <body class="container">
       <!-- Overlay and player -->
       <div class="overlay">
         
         <div class="overlay__welcome">
+          <span class="heading">Welcome</span>
           <p class="subheading">
             Enter your nickname and start playing the game! <br />Enjoy!
           </p>
@@ -35,7 +37,7 @@
       <div class="number">
         <p class="number__box">?</p>
       </div>
-      <main class="mainBox" style="visibility: hidden;">
+      <main class="notVisible" >
         <a href="#" class="btn btn--restart">Restart!</a>
         <section class="left">
           <p class="left__message"> &#8595 Your guess &#8595</p>
@@ -56,7 +58,6 @@
         </section>
       </main>
       <footer>Made by Martin Koller 2021 &copy;</footer>
-    </div>
     <script src="js/script.js"></script>
   </body>
 </html>
