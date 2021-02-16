@@ -36,6 +36,7 @@ const initGame = function () {
   highScoreEl.textContent = highScore;
   isVisible = false;
   main.classList.toggle('notVisible');
+  btnNextRound.classList.toggle('notVisible');
 };
 
 const newRound = function() {
@@ -101,6 +102,8 @@ const gameLogic = function () {
       document.querySelector('body').style.backgroundColor = 'red';
       if(!isVisible)
         btnNextRound.classList.toggle('notVisible');
+
+      isVisible = true;
     }
   }
 };

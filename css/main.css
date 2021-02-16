@@ -72,9 +72,12 @@ main {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -157,6 +160,13 @@ footer {
   border-radius: 2%;
   text-align: center;
   margin-top: 5rem;
+}
+
+@media only screen and (max-width: 50em) {
+  .btn--nextround {
+    margin: 2rem;
+    width: 60%;
+  }
 }
 
 .overlay {
@@ -385,6 +395,12 @@ footer {
   width: 50rem;
   margin-bottom: 2rem;
   text-align: center;
+}
+
+@media only screen and (max-width: 50em) {
+  .left__message {
+    font-size: 3.5rem;
+  }
 }
 
 .left__box {
