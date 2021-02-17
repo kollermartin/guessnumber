@@ -99,6 +99,7 @@ const gameLogic = function () {
       displayMessage('You lost the game!');
       score = 0;
       scoreEl.textContent = score;
+      numberEl.textContent = secretNumber;
       document.querySelector('body').style.backgroundColor = 'red';
       if(!isVisible)
         btnNextRound.classList.toggle('notVisible');
