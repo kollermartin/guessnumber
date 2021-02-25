@@ -139,6 +139,14 @@
     width: 100%;
     background-color: #fff;
     margin-right: 10rem;
+
+    @media only screen and (max-width: $bp-small) {
+      content: '';
+      height: 0;
+      width: 0;
+      background-color: transparent;
+      margin-right: 0;
+    }
   }
 
   &::after {
@@ -148,6 +156,14 @@
     width: 100%;
     background-color: #fff;
     margin-left: 10rem;
+
+    @media only screen and (max-width: $bp-small) {
+      content: '';
+      height: 0;
+      width: 0;
+      background-color: transparent;
+      margin-left: 0;
+    }
   }
 
   &__box {

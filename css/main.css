@@ -25,7 +25,7 @@ html {
   }
 }
 
-@media only screen and (max-width: 28.152em) {
+@media only screen and (max-width: 31.25em) {
   html {
     font-size: 45%;
   }
@@ -130,7 +130,7 @@ footer {
   margin-left: 4rem;
 }
 
-@media only screen and (max-width: 28.152em) {
+@media only screen and (max-width: 31.25em) {
   .btn--confirm {
     margin-left: 0;
     margin-top: 1rem;
@@ -214,7 +214,7 @@ footer {
   border-radius: 3%;
 }
 
-@media only screen and (max-width: 28.152em) {
+@media only screen and (max-width: 31.25em) {
   .overlay .login {
     width: 80vw;
     -webkit-box-align: center;
@@ -234,7 +234,7 @@ footer {
   display: flex;
 }
 
-@media only screen and (max-width: 28.152em) {
+@media only screen and (max-width: 31.25em) {
   .overlay .login__box {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -257,7 +257,7 @@ footer {
   transition: all 0.5s;
 }
 
-@media only screen and (max-width: 28.152em) {
+@media only screen and (max-width: 31.25em) {
   .overlay .login__player {
     width: 90%;
   }
@@ -296,6 +296,16 @@ footer {
   margin-right: 10rem;
 }
 
+@media only screen and (max-width: 31.25em) {
+  .number::before {
+    content: '';
+    height: 0;
+    width: 0;
+    background-color: transparent;
+    margin-right: 0;
+  }
+}
+
 .number::after {
   content: '';
   position: relative;
@@ -303,6 +313,16 @@ footer {
   width: 100%;
   background-color: #fff;
   margin-left: 10rem;
+}
+
+@media only screen and (max-width: 31.25em) {
+  .number::after {
+    content: '';
+    height: 0;
+    width: 0;
+    background-color: transparent;
+    margin-left: 0;
+  }
 }
 
 .number__box {
@@ -346,7 +366,7 @@ footer {
   }
 }
 
-@media only screen and (max-width: 28.152em) {
+@media only screen and (max-width: 31.25em) {
   .heading {
     font-size: 4rem;
   }
@@ -356,7 +376,7 @@ footer {
   font-size: 3rem;
 }
 
-@media only screen and (max-width: 28.152em) {
+@media only screen and (max-width: 31.25em) {
   .subheading {
     font-size: 2rem;
   }
